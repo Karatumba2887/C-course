@@ -16,7 +16,7 @@ public:
     std::vector<Products> productsData;
 
     MarketDataProcessor();
-    void drawInterface();
+    static void drawInterface();
 
     void drawData();
     void addElementToTheEnd();

@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/masha/Desktop/course/cmake-build-debug",
-		"source" : "C:/Users/masha/Desktop/course"
+		"build" : "D:/C-course/cmake-build-debug",
+		"source" : "D:/C-course"
 	},
 	"version" : 
 	{

@@ -1,4 +1,4 @@
-#include "iostream"
+#include <iostream>
 #include <iomanip>
 #include <locale>
 #include <codecvt>
@@ -16,10 +16,10 @@ string options[] = {
         "Додати новий елемент після обраного",
         "Змінити обраний елемент",
         "Видалити елемент, починаючи від обраного",
-        "Визначення якого продукту продано біше всіх та меньше всіх та того що знаходится по середині."
+        "Визначення якого продукту продано більше всіх та меньше всіх та того що знаходится по середині."
 };
 
-wstring convertStringToWstring(string str) {
+wstring convertStringToWstring(const string str) {
     wstring_convert<codecvt_utf8<wchar_t>, wchar_t> converter;
     wstring wide_str = converter.from_bytes(str);
     return wide_str;
@@ -46,13 +46,19 @@ const int longestStrLength = findLongestStringLengthInArray(options, arrSize);
 void MarketDataProcessor::drawInterface() {
     int iteration = 0;
 
-    cout << setw(longestStrLength+6) << setfill('-') << "|" << endl;
+    cout << "+" << setw(longestStrLength + 7) << setfill('-') << "|" << endl;
 
-    for (const string& option : options) {
+    for (const string &option: options) {
         ++iteration;
+
         if (iteration > 1) {
-            cout << setw(longestStrLength+6) << setfill('-') << "|" << endl;
+            cout << "|" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
         }
-        cout <<"| " << iteration << "| " << setw(longestStrLength) << option << " |" << endl;
+
+        cout << "| " << iteration << "| " << option << endl;
+
+        if (iteration == arrSize) {
+            cout << "+" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
+        }
     }
 }
