@@ -1,0 +1,3 @@
+C:/Users/masha/Desktop/course/cmake-build-debug/CMakeFiles/courseMariya.dir
+C:/Users/masha/Desktop/course/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/masha/Desktop/course/cmake-build-debug/CMakeFiles/rebuild_cache.dir
