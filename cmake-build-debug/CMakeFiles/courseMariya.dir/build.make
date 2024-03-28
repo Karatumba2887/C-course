@@ -138,10 +138,24 @@ CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.s"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-course\src\modules\addElementToTheEnd.cpp -o CMakeFiles\courseMariya.dir\src\modules\addElementToTheEnd.cpp.s
 
+CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
+CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj: D:/C-course/src/modules/choiceStep.cpp
+CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj"
+	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\choiceStep.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\choiceStep.cpp.obj -c D:\C-course\src\modules\choiceStep.cpp
+
+CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.i"
+	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\C-course\src\modules\choiceStep.cpp > CMakeFiles\courseMariya.dir\src\modules\choiceStep.cpp.i
+
+CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.s"
+	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\C-course\src\modules\choiceStep.cpp -o CMakeFiles\courseMariya.dir\src\modules\choiceStep.cpp.s
+
 CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj: D:/C-course/src/modules/deleteFromSelectedElement.cpp
 CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\deleteFromSelectedElement.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\deleteFromSelectedElement.cpp.obj -c D:\C-course\src\modules\deleteFromSelectedElement.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.s: cmake_f
 CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj: D:/C-course/src/modules/drawData.cpp
 CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\drawData.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\drawData.cpp.obj -c D:\C-course\src\modules\drawData.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj: D:/C-course/src/modules/drawInterface.cpp
 CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\drawInterface.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\drawInterface.cpp.obj -c D:\C-course\src\modules\drawInterface.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj: D:/C-course/src/modules/getFromFile.cpp
 CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\getFromFile.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\getFromFile.cpp.obj -c D:\C-course\src\modules\getFromFile.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.i: cmake_force
@@ -197,7 +211,7 @@ CMakeFiles/courseMariya.dir/src/modules/getFromFile.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj: D:/C-course/src/modules/replaceSelectedElement.cpp
 CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\replaceSelectedElement.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\replaceSelectedElement.cpp.obj -c D:\C-course\src\modules\replaceSelectedElement.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.i: cmake_force
@@ -211,7 +225,7 @@ CMakeFiles/courseMariya.dir/src/modules/replaceSelectedElement.cpp.s: cmake_forc
 CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj: D:/C-course/src/modules/saveData.cpp
 CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\saveData.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\saveData.cpp.obj -c D:\C-course\src\modules\saveData.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.i: cmake_force
@@ -225,7 +239,7 @@ CMakeFiles/courseMariya.dir/src/modules/saveData.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj: D:/C-course/src/modules/showData.cpp
 CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/showData.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\showData.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\showData.cpp.obj -c D:\C-course\src\modules\showData.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/showData.cpp.i: cmake_force
@@ -239,7 +253,7 @@ CMakeFiles/courseMariya.dir/src/modules/showData.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj: D:/C-course/src/modules/sortBySelectedField.cpp
 CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\sortBySelectedField.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\sortBySelectedField.cpp.obj -c D:\C-course\src\modules\sortBySelectedField.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.i: cmake_force
@@ -253,7 +267,7 @@ CMakeFiles/courseMariya.dir/src/modules/sortBySelectedField.cpp.s: cmake_force
 CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj: CMakeFiles/courseMariya.dir/flags.make
 CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj: D:/C-course/src/modules/sortData.cpp
 CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj: CMakeFiles/courseMariya.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj"
 	C:\msys64\clang64\bin\clang++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.obj -MF CMakeFiles\courseMariya.dir\src\modules\sortData.cpp.obj.d -o CMakeFiles\courseMariya.dir\src\modules\sortData.cpp.obj -c D:\C-course\src\modules\sortData.cpp
 
 CMakeFiles/courseMariya.dir/src/modules/sortData.cpp.i: cmake_force
@@ -271,6 +285,7 @@ courseMariya_OBJECTS = \
 "CMakeFiles/courseMariya.dir/src/modules/addAfterSelectedElement.cpp.obj" \
 "CMakeFiles/courseMariya.dir/src/modules/addBeforeSelectedElement.cpp.obj" \
 "CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj" \
+"CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj" \
 "CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj" \
 "CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj" \
 "CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj" \
@@ -289,6 +304,7 @@ courseMariya.exe: CMakeFiles/courseMariya.dir/src/MarketDataProcessorConstructor
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/addAfterSelectedElement.cpp.obj
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/addBeforeSelectedElement.cpp.obj
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj
+courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj
 courseMariya.exe: CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj
@@ -302,7 +318,7 @@ courseMariya.exe: CMakeFiles/courseMariya.dir/build.make
 courseMariya.exe: CMakeFiles/courseMariya.dir/linkLibs.rsp
 courseMariya.exe: CMakeFiles/courseMariya.dir/objects1.rsp
 courseMariya.exe: CMakeFiles/courseMariya.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable courseMariya.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\C-course\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable courseMariya.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\courseMariya.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

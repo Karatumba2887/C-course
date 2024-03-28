@@ -248,6 +248,30 @@ src/modules/addElementToTheEnd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\courseMariya.dir\build.make CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.s
 .PHONY : src/modules/addElementToTheEnd.cpp.s
 
+src/modules/choiceStep.obj: src/modules/choiceStep.cpp.obj
+.PHONY : src/modules/choiceStep.obj
+
+# target to build an object file
+src/modules/choiceStep.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\courseMariya.dir\build.make CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj
+.PHONY : src/modules/choiceStep.cpp.obj
+
+src/modules/choiceStep.i: src/modules/choiceStep.cpp.i
+.PHONY : src/modules/choiceStep.i
+
+# target to preprocess a source file
+src/modules/choiceStep.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\courseMariya.dir\build.make CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.i
+.PHONY : src/modules/choiceStep.cpp.i
+
+src/modules/choiceStep.s: src/modules/choiceStep.cpp.s
+.PHONY : src/modules/choiceStep.s
+
+# target to generate assembly for a file
+src/modules/choiceStep.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\courseMariya.dir\build.make CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.s
+.PHONY : src/modules/choiceStep.cpp.s
+
 src/modules/deleteFromSelectedElement.obj: src/modules/deleteFromSelectedElement.cpp.obj
 .PHONY : src/modules/deleteFromSelectedElement.obj
 
@@ -488,6 +512,9 @@ help:
 	@echo ... src/modules/addElementToTheEnd.obj
 	@echo ... src/modules/addElementToTheEnd.i
 	@echo ... src/modules/addElementToTheEnd.s
+	@echo ... src/modules/choiceStep.obj
+	@echo ... src/modules/choiceStep.i
+	@echo ... src/modules/choiceStep.s
 	@echo ... src/modules/deleteFromSelectedElement.obj
 	@echo ... src/modules/deleteFromSelectedElement.i
 	@echo ... src/modules/deleteFromSelectedElement.s

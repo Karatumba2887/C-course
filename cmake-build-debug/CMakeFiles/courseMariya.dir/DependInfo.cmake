@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/C-course/src/modules/addAfterSelectedElement.cpp" "CMakeFiles/courseMariya.dir/src/modules/addAfterSelectedElement.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/addAfterSelectedElement.cpp.obj.d"
   "D:/C-course/src/modules/addBeforeSelectedElement.cpp" "CMakeFiles/courseMariya.dir/src/modules/addBeforeSelectedElement.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/addBeforeSelectedElement.cpp.obj.d"
   "D:/C-course/src/modules/addElementToTheEnd.cpp" "CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj.d"
+  "D:/C-course/src/modules/choiceStep.cpp" "CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj.d"
   "D:/C-course/src/modules/deleteFromSelectedElement.cpp" "CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj.d"
   "D:/C-course/src/modules/drawData.cpp" "CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj.d"
   "D:/C-course/src/modules/drawInterface.cpp" "CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj" "gcc" "CMakeFiles/courseMariya.dir/src/modules/drawInterface.cpp.obj.d"

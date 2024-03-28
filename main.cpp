@@ -5,19 +5,15 @@
 
 using namespace std;
 
-//    system("chcp 65001");
-//    setlocale(LC_ALL, "Ukrainian");
-
-void welcomemessage()
-{
+void welcomemessage() {
     cout << "\n\n";
-    cout << "\t\t########################################\n";
-    cout << "\t\t########################################\n";
-    cout << "\t\t########################################\n";
-    cout << "\t\t##### development by MARIYA DRAPAK #####\n";
-    cout << "\t\t########################################\n";
-    cout << "\t\t########################################\n";
-    cout << "\t\t########################################\n";
+    cout << "\t########################################\n";
+    cout << "\t########################################\n";
+    cout << "\t########################################\n";
+    cout << "\t##### development by MARIYA DRAPAK #####\n";
+    cout << "\t########################################\n";
+    cout << "\t########################################\n";
+    cout << "\t########################################\n";
     cout << "\n\n";
 };
 
@@ -25,13 +21,17 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
     HANDLE console_color;
     console_color = GetStdHandle(STD_OUTPUT_HANDLE);
-    SetConsoleTextAttribute(console_color, 13);
+    SetConsoleTextAttribute(console_color, 2);
 
     welcomemessage();
+    cout << "\t";
     system("pause");
     system("cls");
     MarketDataProcessor programProcess;
+
     MarketDataProcessor::drawInterface();
-    system("pause");
+    programProcess.choiceStep();
+
+//    system("pause");
     return 0;
 }

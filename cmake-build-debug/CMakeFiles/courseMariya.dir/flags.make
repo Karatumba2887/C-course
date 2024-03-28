@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -static-libgcc -static-libstdc++ -g -fcolor-diagnostics
+CXX_FLAGS =  -Wno-deprecated-declarations -g -fcolor-diagnostics
 

@@ -3,8 +3,8 @@ project(course)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Set compiler flags to include static libraries
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libgcc -static-libstdc++")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static")
 
 #SEARCH FOR .CPP AND .H FILES
 file(GLOB_RECURSE headers "*.h")

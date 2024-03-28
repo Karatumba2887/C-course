@@ -5,18 +5,22 @@
 #include <vector>
 #include <string>
 
+using namespace std;
+
 class MarketDataProcessor {
 public:
     struct Products
     {
-        std::string name; // имя
-        double price; // цена средняя на рынке
-        long consumedForYear; // Кол во тон в год потреблено
+        string name;
+        double price;
+        int consumedForYear;
     };
-    std::vector<Products> productsData;
+
+    vector<Products> productsData;
 
     MarketDataProcessor();
     static void drawInterface();
+    void choiceStep();
 
     void drawData();
     void addElementToTheEnd();
@@ -29,7 +33,6 @@ public:
     void deleteFromSelectedElement();
     void sortBySelectedField();
 
-private:
     void getFromFile();
 };
 

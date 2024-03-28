@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/courseMariya.dir/src/modules/addBeforeSelectedElement.cpp.obj.d"
   "CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj"
   "CMakeFiles/courseMariya.dir/src/modules/addElementToTheEnd.cpp.obj.d"
+  "CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj"
+  "CMakeFiles/courseMariya.dir/src/modules/choiceStep.cpp.obj.d"
   "CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj"
   "CMakeFiles/courseMariya.dir/src/modules/deleteFromSelectedElement.cpp.obj.d"
   "CMakeFiles/courseMariya.dir/src/modules/drawData.cpp.obj"
