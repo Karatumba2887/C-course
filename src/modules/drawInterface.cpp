@@ -7,19 +7,19 @@
 using namespace std;
 
 string options[] = {
-        "Ввести інформацію про овочі і фрукти",
-        "Додати елемент в кінець списку",
-        "Переглянути всю інформацію",
-        "Додати інформацію в текстовий файл",
-        "Сортувати продукти за ціною",
+        "Вивести інформацію з текстового файлу",
+        "Додати новий елемент в кінець масиву",
+        "Переглянути всі елементи масиву",
+        "Зберегти інформацію в текстовий файл",
+        "Сортувати масиву за ціною (шейкерне сортування), та пошук елемента (інтерполяційний алгоритм)",
         "Додати новий елемент перед обраним",
         "Додати новий елемент після обраного",
-        "Змінити обраний елемент",
+        "Заміна обраного елемента",
         "Видалити елемент, починаючи від обраного",
-        "Визначення якого продукту продано більше всіх та меньше всіх та того що знаходится по середині."
+        "Перегляд елементів і знаходження Max, Min та обчислення середнього по полю 'спожито за рік'"
 };
 
-wstring convertStringToWstring(const string str) {
+wstring convertStringToWstring(const string& str) {
     wstring_convert<codecvt_utf8<wchar_t>, wchar_t> converter;
     wstring wide_str = converter.from_bytes(str);
     return wide_str;
@@ -46,19 +46,21 @@ const int longestStrLength = findLongestStringLengthInArray(options, arrSize);
 void MarketDataProcessor::drawInterface() {
     int iteration = 0;
 
-    cout << "+" << setw(longestStrLength + 7) << setfill('-') << "|" << endl;
+    cout << "\n\n\t+" << setw(longestStrLength + 7) << setfill('-') << "|" << endl;
 
     for (const string &option: options) {
         ++iteration;
 
         if (iteration > 1) {
-            cout << "|" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
+            cout << "\t|" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
         }
 
-        cout << "| " << iteration << "| " << option << endl;
+        cout << "\t| " << iteration << "| " << option << endl;
 
         if (iteration == arrSize) {
-            cout << "+" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
+            cout << "\t+" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
         }
     }
+
+    cout << "\n\tДля того щоб обрати дію, введіть цифру під якою знаходиться відповідна дія: \n" << endl;
 }
