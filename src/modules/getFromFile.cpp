@@ -30,14 +30,14 @@ void MarketDataProcessor::getFromFile() {
         }
 
         string line;
-        ifstream txtfile(fileName);
+        ifstream txtFile(fileName);
 
-        if (!txtfile.is_open()) {
+        if (!txtFile.is_open()) {
             cout << "Can`t open: " << fileName << endl;
             continue;
         }
 
-        while (getline(txtfile, line)) {
+        while (getline(txtFile, line)) {
             istringstream strStream(line);
 
             string name, priceStr, consumedStr;
@@ -59,6 +59,6 @@ void MarketDataProcessor::getFromFile() {
             }
         }
 
-        txtfile.close();
+        txtFile.close();
     }
-};
+}
