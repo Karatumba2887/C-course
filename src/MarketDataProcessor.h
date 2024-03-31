@@ -6,34 +6,34 @@
 #include <string>
 
 using namespace std;
-
+// Описание структуры класса
 class MarketDataProcessor {
 public:
-    struct Products
-    {
+    MarketDataProcessor();
+    void start();
+
+private:
+    struct Product {
         string name;
         double price;
         int consumedForYear;
     };
 
-    vector<Products> productsData;
+    vector<Product> productsData;
 
-    MarketDataProcessor();
-    static void drawInterface();
-    void choiceStep();
-
-    void drawData();
-    void addElementToTheEnd();
-    void showData();
-    void saveData();
-    void sortData();
-    void addBeforeSelectedElement();
-    void addAfterSelectedElement();
-    void replaceSelectedElement();
-    void deleteFromSelectedElement();
-    void sortBySelectedField();
-
-    void getFromFile();
+     void drawInterface();
+     void choiceStep(bool &programAlive);
+     void drawData();
+     void addElementToTheEnd();
+     void showData();
+     void saveData();
+     void sortData();
+     void addBeforeSelectedElement();
+     void addAfterSelectedElement();
+     void replaceSelectedElement();
+     void deleteFromSelectedElement();
+     void sortBySelectedField();
+     void getFromFile();
 };
 
 #endif

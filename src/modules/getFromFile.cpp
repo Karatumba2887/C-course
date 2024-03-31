@@ -13,7 +13,7 @@ void MarketDataProcessor::getFromFile() {
     path /= "files";
 
     if (!(fs::exists(path) && fs::is_directory(path))) {
-        cout << "Failed to find 'files' directory." << endl;
+        cout << "Не вдалося знайти каталог 'files'." << endl;
         // TODO: add create file and folder logic
         return;
     }
@@ -33,7 +33,7 @@ void MarketDataProcessor::getFromFile() {
         ifstream txtFile(fileName);
 
         if (!txtFile.is_open()) {
-            cout << "Can`t open: " << fileName << endl;
+            cout << "Неможливо відкрити: " << fileName << endl;
             continue;
         }
 
@@ -51,10 +51,10 @@ void MarketDataProcessor::getFromFile() {
             }
 
             try {
-                Products newProduct = {name, stod(priceStr), stoi(consumedStr)};
+                Product newProduct = {name, stod(priceStr), stoi(consumedStr)};
                 productsData.push_back(newProduct);
             } catch (...) {
-                cout << "ERROR IN PRODUCT GET FROM FILE" << endl;
+                cout << "Помилка отримання продукту з файла" << endl;
                 continue;
             }
         }

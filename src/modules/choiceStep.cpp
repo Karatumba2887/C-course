@@ -4,14 +4,14 @@
 
 using namespace std;
 
-void MarketDataProcessor::choiceStep() {
+void MarketDataProcessor::choiceStep(bool &programAlive) {
     int choice;
 
     while (true) {
-        cout << "\tÐ’Ð°Ñˆ Ð²Ð¸Ð±Ñ–Ñ€ - ";
+        cout << "\tÂàø âèá³ð - ";
         cin >> choice;
-        if (cin.fail() || choice < 1 || choice > 10) {
-            cout << "\n\tÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ– Ð´Ð°Ð½Ñ–. Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ†Ñ–Ð»Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð²Ñ–Ð´ 1 Ð´Ð¾ 10." << endl;
+        if (cin.fail() || choice < 1 || choice > 11) {
+            cout << "\n\tÍåïðàâèëüí³ äàí³. Ââåä³òü ö³ëå ÷èñëî â³ä 1 äî 11." << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         } else {
@@ -19,6 +19,47 @@ void MarketDataProcessor::choiceStep() {
         }
     }
 
-    cout << "\t";
-    system("pause");
-};
+    system("cls");
+
+    switch (choice) {
+        case 1:
+            this->showData();
+            break;
+        case 2:
+            this->addElementToTheEnd();
+            break;
+        case 3:
+            this->drawData();
+            break;
+        case 4:
+            this->saveData();
+            break;
+        case 5:
+            this->sortBySelectedField();
+            break;
+        case 6:
+            this->addBeforeSelectedElement();
+            break;
+        case 7:
+            this->addAfterSelectedElement();
+            break;
+        case 8:
+            this->replaceSelectedElement();
+            break;
+        case 9:
+            this->deleteFromSelectedElement();
+            break;
+        case 10:
+            // sort avg min max by field
+            this->sortData();
+            break;
+        case 11:
+            programAlive = false;
+            break;
+        default:
+            cout << "Êðèòè÷íà ïîìèëêà!" << endl;
+            programAlive = false;
+            system("pause");
+            break;
+    }
+}

@@ -1,66 +1,61 @@
 #include <iostream>
 #include <iomanip>
-#include <locale>
-#include <codecvt>
+#include "../helpers/helpers.cpp"
 #include "../MarketDataProcessor.h"
 
 using namespace std;
 
 string options[] = {
-        "Р’РёРІРµСЃС‚Рё С–РЅС„РѕСЂРјР°С†С–СЋ Р· С‚РµРєСЃС‚РѕРІРѕРіРѕ С„Р°Р№Р»Сѓ",
-        "Р”РѕРґР°С‚Рё РЅРѕРІРёР№ РµР»РµРјРµРЅС‚ РІ РєС–РЅРµС†СЊ РјР°СЃРёРІСѓ",
-        "РџРµСЂРµРіР»СЏРЅСѓС‚Рё РІСЃС– РµР»РµРјРµРЅС‚Рё РјР°СЃРёРІСѓ",
-        "Р—Р±РµСЂРµРіС‚Рё С–РЅС„РѕСЂРјР°С†С–СЋ РІ С‚РµРєСЃС‚РѕРІРёР№ С„Р°Р№Р»",
-        "РЎРѕСЂС‚СѓРІР°С‚Рё РјР°СЃРёРІСѓ Р·Р° С†С–РЅРѕСЋ (С€РµР№РєРµСЂРЅРµ СЃРѕСЂС‚СѓРІР°РЅРЅСЏ), С‚Р° РїРѕС€СѓРє РµР»РµРјРµРЅС‚Р° (С–РЅС‚РµСЂРїРѕР»СЏС†С–Р№РЅРёР№ Р°Р»РіРѕСЂРёС‚Рј)",
-        "Р”РѕРґР°С‚Рё РЅРѕРІРёР№ РµР»РµРјРµРЅС‚ РїРµСЂРµРґ РѕР±СЂР°РЅРёРј",
-        "Р”РѕРґР°С‚Рё РЅРѕРІРёР№ РµР»РµРјРµРЅС‚ РїС–СЃР»СЏ РѕР±СЂР°РЅРѕРіРѕ",
-        "Р—Р°РјС–РЅР° РѕР±СЂР°РЅРѕРіРѕ РµР»РµРјРµРЅС‚Р°",
-        "Р’РёРґР°Р»РёС‚Рё РµР»РµРјРµРЅС‚, РїРѕС‡РёРЅР°СЋС‡Рё РІС–Рґ РѕР±СЂР°РЅРѕРіРѕ",
-        "РџРµСЂРµРіР»СЏРґ РµР»РµРјРµРЅС‚С–РІ С– Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ Max, Min С‚Р° РѕР±С‡РёСЃР»РµРЅРЅСЏ СЃРµСЂРµРґРЅСЊРѕРіРѕ РїРѕ РїРѕР»СЋ 'СЃРїРѕР¶РёС‚Рѕ Р·Р° СЂС–Рє'"
+        "Вивести інформацію з текстового файлу",
+        "Додати новий елемент в кінець масиву",
+        "Переглянути всі елементи масиву",
+        "Зберегти інформацію в текстовий файл",
+        "Сортувати масиву за ціною (шейкерне сортування), та пошук елемента (інтерполяційний алгоритм)",
+        "Додати новий елемент перед обраним",
+        "Додати новий елемент після обраного",
+        "Заміна обраного елемента",
+        "Видалити елемент, починаючи від обраного",
+        "Перегляд елементів і знаходження Max, Min та обчислення середнього по полю 'спожито за рік'",
+        "Закінчити виконання программи"
 };
 
-wstring convertStringToWstring(const string& str) {
-    wstring_convert<codecvt_utf8<wchar_t>, wchar_t> converter;
-    wstring wide_str = converter.from_bytes(str);
-    return wide_str;
-}
-
-int findLongestStringLengthInArray(const string strings[], int arrSize) {
-    int maxLength = 0;
-
-    for (int i = 0; i < arrSize; ++i) {
-        const wstring converted = convertStringToWstring(strings[i]);
-        int charLength = converted.size();
-
-        if (charLength > maxLength) {
-            maxLength = charLength;
-        }
-    }
-
-    return maxLength;
-}
+//int findLongestStringLengthInArray(const string strings[], int arrSize) {
+//    int maxLength = 0;
+//
+//    for (int i = 0; i < arrSize; ++i) {
+//        const wstring converted = convertStringToWstring(strings[i]);
+//        size_t charLengthSizeT = converted.size();
+//        int charLength = static_cast<int>(charLengthSizeT);
+//
+//        if (charLength > maxLength) {
+//            maxLength = charLength;
+//        }
+//    }
+//
+//    return maxLength;
+//}
 
 const int arrSize = sizeof(options) / sizeof(options[0]);
-const int longestStrLength = findLongestStringLengthInArray(options, arrSize);
+//const int longestStrLength = findLongestStringLengthInArray(options, arrSize);
 
 void MarketDataProcessor::drawInterface() {
     int iteration = 0;
 
-    cout << "\n\n\t+" << setw(longestStrLength + 7) << setfill('-') << "|" << endl;
+    cout << "\n\n\t+" << setw(70 + 7) << setfill('-') << "|" << endl;
 
     for (const string &option: options) {
         ++iteration;
 
         if (iteration > 1) {
-            cout << "\t|" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
+            cout << "\t|" << setw(70 + 6) << setfill('-') << "" << "|" << endl;
         }
 
         cout << "\t| " << iteration << "| " << option << endl;
 
         if (iteration == arrSize) {
-            cout << "\t+" << setw(longestStrLength + 6) << setfill('-') << "" << "|" << endl;
+            cout << "\t+" << setw(70 + 6) << setfill('-') << "" << "|" << endl;
         }
     }
 
-    cout << "\n\tР”Р»СЏ С‚РѕРіРѕ С‰РѕР± РѕР±СЂР°С‚Рё РґС–СЋ, РІРІРµРґС–С‚СЊ С†РёС„СЂСѓ РїС–Рґ СЏРєРѕСЋ Р·РЅР°С…РѕРґРёС‚СЊСЃСЏ РІС–РґРїРѕРІС–РґРЅР° РґС–СЏ: \n" << endl;
+    cout << "\n\tДля того щоб обрати дію, введіть цифру під якою знаходиться відповідна дія: \n" << endl;
 }

@@ -1,37 +1,23 @@
-#include <iostream>
 #include <windows.h>
-#include <cstdlib>
 #include "src/MarketDataProcessor.h"
+#include <locale>
 
 using namespace std;
 
-void welcomemessage() {
-    cout << "\n\n";
-    cout << "\t########################################\n";
-    cout << "\t########################################\n";
-    cout << "\t########################################\n";
-    cout << "\t##### development by MARIYA DRAPAK #####\n";
-    cout << "\t########################################\n";
-    cout << "\t########################################\n";
-    cout << "\t########################################\n";
-    cout << "\n\n";
-};
-
 int main() {
-    SetConsoleOutputCP(CP_UTF8);
+    // Устанавливаем вывод в консоль в формате UTF-8,
+    // кодировка файлов проекта так же стоит  UTF-8
+    // так что весь текст написанный тут для вывода в жтом же формате
+    SetConsoleOutputCP(1251);
+    SetConsoleCP(1251);
+    // Устанавливаем цвет текста в консоли
     HANDLE console_color;
     console_color = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(console_color, 2);
-
-    welcomemessage();
-    cout << "\t";
-    system("pause");
-    system("cls");
+    // Создаем обьект класса
     MarketDataProcessor programProcess;
-
-    MarketDataProcessor::drawInterface();
-    programProcess.choiceStep();
-
-//    system("pause");
+    // Запускаем главный метод нашего класса
+    programProcess.start();
+    // Завершение программы
     return 0;
 }
