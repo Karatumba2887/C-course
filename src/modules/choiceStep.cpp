@@ -62,4 +62,9 @@ void MarketDataProcessor::choiceStep(bool &programAlive) {
             system("pause");
             break;
     }
+    cout << "\t";
+    cout << "Натисніть будь яку клавішу для продовження роботи програми..." << endl;
+    cout << "\t";
+    system("pause");
+    system("cls");
 }

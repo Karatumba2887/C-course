@@ -4,19 +4,13 @@
 #include <fstream>
 #include <sstream>
 #include "../MarketDataProcessor.h"
+#include "../helpers/helpers.cpp"
 
 using namespace std;
 namespace fs = filesystem;
 
 void MarketDataProcessor::getFromFile() {
-    fs::path path = fs::current_path();
-    path /= "files";
-
-    if (!(fs::exists(path) && fs::is_directory(path))) {
-        cout << "Не вдалося знайти каталог 'files'." << endl;
-        // TODO: add create file and folder logic
-        return;
-    }
+    fs::path path = getPathToFiles();
 
     productsData.clear();
 

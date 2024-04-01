@@ -12,7 +12,6 @@ public:
     MarketDataProcessor();
     void start();
 
-private:
     struct Product {
         string name;
         double price;
